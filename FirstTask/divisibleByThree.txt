@@ -1,0 +1,7 @@
+84 divisibleByThree
+87 divisibleByThree
+51 divisibleByThree
+45 divisibleByThree
+51 divisibleByThree
+42 divisibleByThree
+24 divisibleByThree

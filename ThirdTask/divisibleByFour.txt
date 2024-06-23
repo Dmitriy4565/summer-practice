@@ -1,0 +1,12 @@
+32 divisibleByFour
+48 divisibleByFour
+96 divisibleByFour
+24 divisibleByFour
+84 divisibleByFour
+20 divisibleByFour
+92 divisibleByFour
+56 divisibleByFour
+12 divisibleByFour
+36 divisibleByFour
+32 divisibleByFour
+52 divisibleByFour

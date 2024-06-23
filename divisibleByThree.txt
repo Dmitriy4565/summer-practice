@@ -1,6 +1,0 @@
-81 divisibleByThree
-72 divisibleByThree
-36 divisibleByThree
-48 divisibleByThree
-54 divisibleByThree
-33 divisibleByThree

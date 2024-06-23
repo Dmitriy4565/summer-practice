@@ -1,9 +1,9 @@
 package main
 
 import (
-	"myapp/generator"
-	"myapp/handlers"
-	"myapp/utils"
+	"FirstTask/generator"
+	"FirstTask/handlers"
+	"FirstTask/utils"
 	"sync"
 )
 

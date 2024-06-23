@@ -1,3 +1,0 @@
-52 divisibleByFour
-80 divisibleByFour
-28 divisibleByFour
