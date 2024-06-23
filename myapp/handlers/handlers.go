@@ -14,7 +14,6 @@ var (
 	mutex                   sync.Mutex
 )
 
-// DivisibleByTwo обрабатывает числа, кратные 2
 func DivisibleByTwo(ch <-chan int, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for num := range ch {
@@ -25,7 +24,6 @@ func DivisibleByTwo(ch <-chan int, wg *sync.WaitGroup) {
 	}
 }
 
-// DivisibleByThree обрабатывает числа, кратные 3
 func DivisibleByThree(ch <-chan int, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for num := range ch {
@@ -36,7 +34,6 @@ func DivisibleByThree(ch <-chan int, wg *sync.WaitGroup) {
 	}
 }
 
-// DivisibleByFour обрабатывает числа, кратные 4
 func DivisibleByFour(ch <-chan int, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for num := range ch {

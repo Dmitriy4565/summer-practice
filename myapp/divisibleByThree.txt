@@ -2,3 +2,5 @@
 33 divisibleByThree
 6 divisibleByThree
 15 divisibleByThree
+63 divisibleByThree
+93 divisibleByThree

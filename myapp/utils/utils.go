@@ -5,7 +5,6 @@ import (
 	"os"
 )
 
-// WriteToFile записывает результаты в файл
 func WriteToFile(filename string, results []string) {
 	file, err := os.OpenFile(filename+".txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {

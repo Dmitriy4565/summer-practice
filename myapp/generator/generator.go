@@ -6,7 +6,6 @@ import (
 	"time"
 )
 
-// GenerateNumbers генерирует случайные числа и отправляет их в канал
 func GenerateNumbers(ch chan<- int, wg *sync.WaitGroup) {
 	defer close(ch)
 	defer wg.Done()
