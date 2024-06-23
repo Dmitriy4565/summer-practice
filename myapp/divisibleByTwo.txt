@@ -1,0 +1,17 @@
+10 divisibleByTwo
+18 divisibleByTwo
+4 divisibleByTwo
+40 divisibleByTwo
+22 divisibleByTwo
+100 divisibleByTwo
+66 divisibleByTwo
+42 divisibleByTwo
+26 divisibleByTwo
+56 divisibleByTwo
+60 divisibleByTwo
+16 divisibleByTwo
+86 divisibleByTwo
+96 divisibleByTwo
+16 divisibleByTwo
+2 divisibleByTwo
+28 divisibleByTwo

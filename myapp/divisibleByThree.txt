@@ -1,0 +1,4 @@
+57 divisibleByThree
+33 divisibleByThree
+6 divisibleByThree
+15 divisibleByThree
