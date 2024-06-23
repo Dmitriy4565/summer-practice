@@ -34,8 +34,8 @@ func main() {
 	http.HandleFunc("/ws", handleConnections)
 	go handleMessages()
 
-	log.Println("Сервер запущен на порту 8000")
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	log.Println("Сервер запущен на порту 8080")
+	log.Fatal(http.ListenAndServe(":8080", nil))
 	defer db.Close()
 
 }
