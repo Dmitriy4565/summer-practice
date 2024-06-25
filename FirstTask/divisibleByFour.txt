@@ -1,4 +1,0 @@
-32 divisibleByFour
-48 divisibleByFour
-96 divisibleByFour
-24 divisibleByFour

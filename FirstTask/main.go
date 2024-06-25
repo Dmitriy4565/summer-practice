@@ -1,26 +1,25 @@
 package main
 
 import (
-	"FirstTask/generator"
 	"FirstTask/handlers"
-	"FirstTask/utils"
-	"sync"
+
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 func main() {
-	var wg sync.WaitGroup
-	wg.Add(3)
+	e := echo.New()
 
-	ch := make(chan int)
+	e.Use(middleware.Logger())
+	e.Use(middleware.Recover())
 
-	go generator.GenerateNumbers(ch, &wg)
-	go handlers.DivisibleByTwo(ch, &wg)
-	go handlers.DivisibleByThree(ch, &wg)
-	go handlers.DivisibleByFour(ch, &wg)
+	e.POST("/login", handlers.Login)
+	e.POST("/register", handlers.Register)
 
-	wg.Wait()
+	r := e.Group("/restricted")
+	r.Use()
+	r.GET("/data", handlers.RestrictedData)
+	r.GET("/info", handlers.RestrictedInfo)
 
-	utils.WriteToFile("divisibleByTwo", handlers.DivisibleByTwoResults)
-	utils.WriteToFile("divisibleByThree", handlers.DivisibleByThreeResults)
-	utils.WriteToFile("divisibleByFour", handlers.DivisibleByFourResults)
+	e.Logger.Fatal(e.Start(":1323"))
 }
