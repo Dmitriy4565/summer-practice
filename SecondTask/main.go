@@ -19,7 +19,6 @@ func initDB() {
     }
 }
 
-// Получить все машины пользователя
 func getUserCars(c echo.Context) error {
     userID := c.Param("id")
     rows, err := db.Query("SELECT id, make, model FROM cars WHERE user_id = $1", userID)
@@ -41,7 +40,6 @@ func getUserCars(c echo.Context) error {
     return c.JSON(http.StatusOK, cars)
 }
 
-// Получить все двигатели пользователя
 func getUserEngines(c echo.Context) error {
     userID := c.Param("id")
     rows, err := db.Query(`
@@ -69,7 +67,6 @@ func getUserEngines(c echo.Context) error {
     return c.JSON(http.StatusOK, engines)
 }
 
-// Получить двигатель конкретной машины
 func getCarEngine(c echo.Context) error {
     carID := c.Param("id")
     row := db.QueryRow("SELECT id, type, horsepower FROM engines WHERE car_id = $1", carID)
@@ -87,7 +84,6 @@ func getCarEngine(c echo.Context) error {
     return c.JSON(http.StatusOK, map[string]interface{}{"id": id, "type": typ, "horsepower": horsepower})
 }
 
-// Получить все двигатели по марке машины
 func getEngines(c echo.Context) error {
     make := c.Param("make")
     rows, err := db.Query(`
