@@ -1,0 +1,20 @@
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE cars (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    make VARCHAR(100) NOT NULL,
+    model VARCHAR(100) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+);
+
+CREATE TABLE engines (
+    id SERIAL PRIMARY KEY,
+    car_id INT NOT NULL,
+    type VARCHAR(100) NOT NULL,
+    horsepower INT NOT NULL,
+    FOREIGN KEY (car_id) REFERENCES cars (id) ON DELETE CASCADE
+);

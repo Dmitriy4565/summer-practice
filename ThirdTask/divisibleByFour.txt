@@ -10,3 +10,5 @@
 36 divisibleByFour
 32 divisibleByFour
 52 divisibleByFour
+28 divisibleByFour
+20 divisibleByFour

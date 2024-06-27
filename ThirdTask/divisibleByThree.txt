@@ -18,3 +18,10 @@
 3 divisibleByThree
 93 divisibleByThree
 39 divisibleByThree
+99 divisibleByThree
+96 divisibleByThree
+6 divisibleByThree
+18 divisibleByThree
+33 divisibleByThree
+39 divisibleByThree
+6 divisibleByThree
